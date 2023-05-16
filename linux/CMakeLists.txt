@@ -1,0 +1,5 @@
+add_library(clientlib SHARED src/client.cpp include/client.h)
+target_link_libraries(clientlib curl)
+target_include_directories(clientlib PUBLIC "${PROJECT_SOURCE_DIR}/linux/include/")
+target_include_directories(clientlib PUBLIC "${PROJECT_SOURCE_DIR}/thirdparty/json/include/")
+target_include_directories(clientlib PUBLIC "${PROJECT_SOURCE_DIR}/commonclient/include/")

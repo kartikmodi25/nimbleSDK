@@ -1,0 +1,5 @@
+add_library(serverAPI SHARED src/ServerAPI.cpp include/ServerAPI.h)
+#target_include_directories(serverAPI PUBLIC "include")
+#target_include_directories(serverAPI PUBLIC "${PROJECT_BINARY_DIR}"                                                                                                                                                 "${PROJECT_SOURCE_DIR}/linux/include/")
+target_include_directories(serverAPI PUBLIC "${PROJECT_SOURCE_DIR}/ServerAPI/include/")
+target_link_libraries(serverAPI clientlib)
