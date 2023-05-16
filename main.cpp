@@ -14,7 +14,7 @@ int main() {
   cout << initialize_nimblenet(
               R"delim(
 		{
-			
+			"deviceID": "preprocessingDevice",
 			"clientID": "testclient",
 			"modelIDs": ["D11LightGBMModel"],
 			"host": "https://api.nimbleedge-staging.com",
@@ -165,3 +165,5 @@ int main() {
     deallocate_output_memory(&ret);
   }
 }
+
+cout<<"HELLO";
